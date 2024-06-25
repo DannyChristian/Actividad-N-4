@@ -20,7 +20,7 @@ resultados = []
 for ensayo in range(1, 101):
     tamano_arreglo = ensayo * 100
     array = [random.randint(0, 100) for _ in range(tamano_arreglo)]
-    numero_a_buscar = random.randint(0, 100)
+    numero_a_buscar = random.randint(0, tamano_arreglo)
     resultado, iteraciones, tiempo_total = busqueda_lineal(array, numero_a_buscar)
     resultados.append({
         'Ensayo': int(ensayo),  
